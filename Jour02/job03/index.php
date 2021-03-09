@@ -7,9 +7,8 @@
     <title>Document</title>
 </head>
 <body>
-    <button id="bouton">Click !</button>
-    <div id="showhide">
-    <p>L'important n'est pas la chute, mais l'atterrissage.<p>
+    <button id="button">Click !</button>
+    <article id=conteur></article>
     <script src="script.js"></script>
 </body>
 </html>

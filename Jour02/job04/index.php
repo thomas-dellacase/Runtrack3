@@ -7,9 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    <button id="bouton">Click !</button>
-    <div id="showhide">
-    <p>L'important n'est pas la chute, mais l'atterrissage.<p>
+    <textarea id="keylogger"></textarea>
     <script src="script.js"></script>
 </body>
 </html>
