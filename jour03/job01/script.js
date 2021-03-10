@@ -6,7 +6,7 @@ $(document).ready(function(){
         });
     });
     
-    $("#b2").click(function(){
+    $("#button2").click(function(){
         $("h1").show();
     });
 });
