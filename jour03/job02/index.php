@@ -8,10 +8,19 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Le $ est un bon élément monétaire. Le # de twitter est une bonne I D. Il faudra faire le point avec la classe pour cacher cet élément.</h1>
-            <button id="button">hide Click !</button>
-            <button id="button2">show Click !</button>
-    <script src="script.js"></script>
+<main>
+    <div id="melangees">
+        <img src="arc1.png">
+        <img src="arc2.png">
+        <img src="arc3.png">
+        <img src="arc4.png">
+        <img src="arc5.png">
+        <img src="arc6.png">
+    </div>
+    <div id="rangees"></div>
+    <button id="button">Mélanger</button>
+</main>
+<script src="script.js"></script>
 </body>    
 </html> 
 
