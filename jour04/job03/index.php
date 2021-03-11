@@ -1,36 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 <body>
-    <form>
-        <input type='text' placeholder='id'></input>
-        <input type='text' placeholder='nom'></input>
-        <select>
-            <option valeur="Grass">Plante</option>
-            <option valeur="Fighting">Combat</option>
-            <option valeur="Dragon">Dragon</option>
-            <option valeur="Water">Eau</option>
-            <option valeur="Electric">Electrique</option>
-            <option valeur="Fire">Feu</option>
-            <option valeur="Ice">Glace</option>
-            <option valeur="Bug">Insectes</option>
-            <option valeur="Normal">Normale</option>
-            <option valeur="Poison">Plante</option>
-            <option valeur="Psy">Psy</option>
-            <option valeur="Rock">Pierre</option>
-            <option valeur="Ground">Sol</option>
-            <option valeur="Gost">Spectre</option>
-            <option valeur="Flying">Vol</option>
+    <form method="post" class="submit">
+        <input type="text" name="id" placeholder="ID">
+        <input type="text" name="nom" placeholder="Nom">
+        <select name="type">
+            <option value="Grass">Grass</option>
+            <option value="Poison">Poison</option>
+            <option value="Fire">Fire</option>
+            <option value="Flying">Flying</option>
+            <option value="Water">Water</option>
+            <option value="Bug">Bug</option>
+            <option value="Normal">Normal</option>
+            <option value="Electric">Electric</option>
+            <option value="Ground">Ground</option>
+            <option value="Fairy">Fairy</option>
+            <option value="Fighting">Fighting</option>
+            <option value="Psychic">Psychic</option>
+            <option value="Rock">Rock</option>
+            <option value="Steel">Steel</option>
+            <option value="Ice">Ice</option>
+            <option value="Ghost">Ghost</option>
+            <option value="Dragon">Dragon</option>
         </select>
-
+        <button type="submit">Filtrer</button>
     </form>
-    <button id="bouton" onclick="jsonValueskey(myObj,'type')">Filtrer</button>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <div class="content">
+    </div>
     <script src="script.js"></script>
-</body>    
-</html> 
+</body>
+</html>
