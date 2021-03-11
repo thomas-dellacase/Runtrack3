@@ -7,7 +7,7 @@ $(function(){
 
         })
         .done(function(data){
-            $("body").append(data);
+            $("body").append('<p>'+data+'</p>');
         })
        
    })
