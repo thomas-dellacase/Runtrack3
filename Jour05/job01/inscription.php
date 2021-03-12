@@ -7,12 +7,32 @@ if(isset($_POST['ins'])){
     $email = htmlspecialchars($_POST['email']);
     $password = htmlspecialchars($_POST['password']);
     $confPassword = htmlspecialchars($_POST['confPassword']);
+
+    if($nom && $prenom && $email && $password && $confPassword){
+        if($password == $confPassword);
+            $password = password_hash($password, PASSWORD_DEFAULT);
+            $db = mysqli_connect('localhost', 'root', '') or die('Erreur');
+            mysqli_select_db($db, 'utliateurs');
+
+            $sql = "SELECT email FROM utilisateur WHERE email = $email";
+            $query = mysqli_query($db, $sql);
+            $test = mysqli_fetch_array($query);
+
+            if(!empty($test)){
+                echo "Erreur choisissez un autre email!";
+            }
+            else{
+                $querry = mysqli_query($db, "INSERT INTO utilisateurs (nom, prenom, email, password) VALUES ($nom, $prenom, $email, $password)");
+                die("Inscription terminé. <a href")
+            }
+    }
 }
 ?>
-    <form method="post" >
-            <input type="text" id="nom"></input>
-            <input type="text" id="prenom"></input>
-            <input type="text" id="email"></input>
-            <input type="text" id="password"></input>
-            <input type="text" id="confPassword"></input>
+    <form method="POST" id="formIns">
+            <input type="text" id="nom" name='nom' placeholder="Nom"></input>
+            <input type="text" id="prenom" name='prenom' placeholder="Prenom"></input>
+            <input type="text" id="email" name='email' placeholder="Email"></input>
+            <input type="text" id="password" name='password' placeholder="Password"></input>
+            <input type="text" id="confPassword" name='confPassword' placeholder="Confirm Password"></input>
+            <button type="submit" id="submitIns">Inscription</button>
         </form>

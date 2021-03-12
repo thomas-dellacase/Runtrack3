@@ -18,7 +18,13 @@ if(isset($_POST['deco'])){
 </head>
 <body>
 
-
+    <div>
+        <button id="button">inscription </button>
+        
+    </div>
+    <div>
+        <button id="button2">connexion </button>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
