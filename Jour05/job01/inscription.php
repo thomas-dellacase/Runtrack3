@@ -23,7 +23,7 @@ if(isset($_POST['ins'])){
             }
             else{
                 $querry = mysqli_query($db, "INSERT INTO utilisateurs (nom, prenom, email, password) VALUES ($nom, $prenom, $email, $password)");
-                die("Inscription terminé. <a href")
+                die("Inscription terminé. <a href");
             }
     }
 }

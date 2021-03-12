@@ -22,7 +22,7 @@ $(function () {
                       $('body').html("Inscrition reussi");
                   }
                   else{
-                      $('body').html("connexion error")
+                      $('body').html("inscrition error")
                   }
               },
                 'text'
@@ -33,6 +33,9 @@ $(function () {
     $("#formCo").remove();
   });
 });
+
+
+
 $(function () {{}
   $("#button2").click(function () {
     $("#formCo").remove();
@@ -41,6 +44,26 @@ $(function () {{}
       url: "connexion.php",
     }).done(function (data) {
       $("body").append("<div>" + data + "</div>");
+      $('#submitCo').click(function(e){
+        e.preventDefault();
+
+        $.post(
+            'connexion.php',{
+                email : $('#email').val(),
+                password : $('#password').val(),
+            },
+            function(data){
+                if(data == succes){
+                    $('body').html("Connexion reussi");
+                }
+                else{
+                    $('body').html("Connect error")
+                }
+            },
+              'text'
+
+        );
+    })
     });
     $("#formIns").remove();
   });
