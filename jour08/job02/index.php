@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <title>Document</title>
 </head>
 <body>
   <header>
     <nav>
-      <div >
-        <a href="#" ></a>
-        <ul>
+      <div class="nav-wrapper">
+        <a href="#" class="brand-logo"></a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
           <li><a href="index.php">Accueil</a></li>
           <li><a href="index.php">Inscription</a></li>
           <li><a href="index.php">Connexion</a></li>
@@ -22,8 +25,10 @@
   </header>
   <main>
     <section>
-          <form action="#" >
-          <div class="titre"> Civilité</div>
+      <div class="container">
+        <div class="row">
+          <form action="#">
+          <div class="titre" style="margin-top:10px;"> Civilité</div>
             <p>
               <label>
                 <input name="group1" type="radio" checked />
@@ -36,28 +41,28 @@
                 <span>Mme</span>
               </label>
             </p>
-                <div class="input-field">
+                <div class="row">
                   <input id="icon_prefix" type="text" class="validate">
                   <label for="icon_prefix">Prénom</label>
                 </div>
-                    <div class="input-field">
+                    <div>
                       <input id="icon_prefix" type="text" class="validate">
                       <label for="icon_prefix">Nom</label>
                     </div>
-                        <div class="input-field">
+                        <div>
                           <input id="icon_prefix" type="text" class="validate">
                           <label for="icon_prefix">Adresse</label>
                         </div>
-                          <div class="input-field">
+                          <div >
                             <input id="icon_prefix" type="text" class="validate">
                             <label for="icon_prefix">Mail</label>
                           </div>
-                            <div class="input-field">
+                            <div >
                               <input id="password" type="password" class="validate">
                               <label for="password">Mot de passe</label>
                             </div>
                           </div>
-                            <div class="input-field">
+                            <div>
                               <input id="password" type="password" class="validate">
                               <label for="password">Confirmation mot de passe</label>
                             </div>
@@ -71,7 +76,7 @@
                           </p>
                           <p>
                             <label>
-                              <input type="checkbox" checked="checked" />
+                              <input type="checkbox"/>
                               <span>Voyage</span>
                             </label>
                           </p>
@@ -83,7 +88,7 @@
                           </p>
                           <p>
                             <label>
-                              <input type="checkbox" checked="checked" />
+                              <input type="checkbox"/>
                               <span>Cinéma</span>
                             </label>
                           </p>
