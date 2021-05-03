@@ -23,7 +23,7 @@ if(isset($_POST['ins'])){
             }
             else{
                 $querry = mysqli_query($db, "INSERT INTO utilisateurs (nom, prenom, email, password) VALUES ($nom, $prenom, $email, $password)");
-                die("Inscription terminé. <a href");
+                die("Inscription terminé. <a href='connexion.php'>Connectez vous </a>.");
             }
     }
 }
@@ -32,7 +32,7 @@ if(isset($_POST['ins'])){
             <input type="text" id="nom" name='nom' placeholder="Nom"></input>
             <input type="text" id="prenom" name='prenom' placeholder="Prenom"></input>
             <input type="text" id="email" name='email' placeholder="Email"></input>
-            <input type="text" id="password" name='password' placeholder="Password"></input>
-            <input type="text" id="confPassword" name='confPassword' placeholder="Confirm Password"></input>
+            <input type="password" id="password" name='password' placeholder="Password"></input>
+            <input type="password" id="confPassword" name='confPassword' placeholder="Confirm Password"></input>
             <button type="submit" id="submitIns">Inscription</button>
         </form>
