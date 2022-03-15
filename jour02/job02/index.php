@@ -8,7 +8,7 @@
     <title>Document</title>
 </head>
 <body>
-    <article id="citation">L'important n'est pas la chute, mais l'atterrissage.</article>
+    <article id="article">L'important n'est pas la chute, mais l'atterrissage.</article>
     <button id="button">Click</button>
 </body>
 </html>

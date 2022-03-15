@@ -2,7 +2,7 @@
 document.addEventListener("DOMContentLoaded",() =>{
     
     function showhide(){
-        let doc = document.getElementById('citation');
+        let doc = document.getElementById('article');
         if(doc.style.display === 'none'){
             doc.style.display = 'block';
         }else{
