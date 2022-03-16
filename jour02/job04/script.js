@@ -1,19 +1,9 @@
-  
-function onkeydownF(e){
-    var keyCode = e.which ? e.which : e.keyCode;
-    var accept = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
-    if(accept.indexOf(String.fromCharCode(keyCode)) >= 0)
-    {
-        var string = String.fromCharCode(keyCode).toLowerCase();
-        var t = document.getElementById('keylogger');
-        var value = t.value;
-        value = value + string;
-        if(document.activeElement.id === 'keylogger')
-        {
-            value = value + string;
-        }
-        t.value = value;
-    }
+document.addEventListener("DOMContentLoaded", function loaded() {
+    const textAreaInput = document.getElementById("keylogger");
+    let record = "";
 
-}
-window.onkeydown = onkeydownF;
+    document.addEventListener("keydown", (e) => {
+    record = record.concat(e.key); // s'écrit aussi record += e.key;
+    textAreaInput.textContent = record;
+    });
+});
