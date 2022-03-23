@@ -30,7 +30,19 @@
             <option value="Ghost">Ghost</option>
             <option value="Dragon">Dragon</option>
         </select>
-        <button id="log">Oe marche wlh</button>
+        <button id="log" name='button'>Attraper les tous</button>
     </form>
+
+
+        <div>
+            <div role="status" id="loading">
+                <span>Loading...</span>
+            </div>
+        </div>
+        <h1>pokemon</h1>
+        <!-- table for showing data -->
+        <table id="pokemon"></table>
+
+
 </body>
 </html>
