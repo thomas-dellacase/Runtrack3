@@ -52,8 +52,6 @@ document.addEventListener("DOMContentLoaded",()=>{
         
     }
 
-
-
     function show(data){
         let tab = 
         `<tr>
