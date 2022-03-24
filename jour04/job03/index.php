@@ -8,10 +8,11 @@
     <title>Document</title>
 </head>
 <body>
-    <form>
+    <form method="POST">
         <input type="text" name="id" placeholder="id"></input>
-        <input type='text' name='nom' placeholder="nom"></input>
-        <select name="type">
+        <input type='text' name='name' placeholder="nom"></input>
+        <select id='typePk' name="type">
+            <option value="" disabled selected>Select your option</option>
             <option value="Grass">Grass</option>
             <option value="Poison">Poison</option>
             <option value="Fire">Fire</option>
